@@ -53,7 +53,7 @@ fn main() {
     let lower_number:u32 = lower_number.trim().parse().expect("Esperaba un número");
 
 
-    //Llamamos a la función de una estrofa:
+    //Llamamos a la función que realiza el algoritmo:
 
    let singing_the_song = sing(higher_number, lower_number);
 
