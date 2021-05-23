@@ -1,4 +1,4 @@
 fn main(){
-    numbers::say_hello();
+    hw_to_library::print();
 }
 
