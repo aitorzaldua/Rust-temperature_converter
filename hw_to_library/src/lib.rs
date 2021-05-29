@@ -1,10 +1,21 @@
-pub fn say_hello() {
-    println!("Hello, world!");
+pub fn print(limit: u8){
+    let numbers = generate_sequence(limit);
+    output_sequence(&numbers);
 }
 
-pub fn print(){
-    let numbers = vec![1,2,3,4,5];
+fn generate_sequence(limit: u8) -> Vec<u8> {
+    (1..=limit).collect()
+}
+
+fn output_sequence(numbers: &[u8]) {
     for n in numbers{
         println!("{}", n);
     }
+}
+
+
+#[test]
+fn generate_sequence_should_work() {
+let result = generate_sequence(5);
+assert_eq!(result, &[1, 2, 3]);
 }

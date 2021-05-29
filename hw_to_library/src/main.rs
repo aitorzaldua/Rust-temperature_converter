@@ -1,4 +1,4 @@
 fn main(){
-    hw_to_library::print();
+    hw_to_library::print(5);
 }
 
