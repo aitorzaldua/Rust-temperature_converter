@@ -10,6 +10,8 @@ fn generate_sequence(limit: u8) -> Vec<u8> {
 fn output_sequence(numbers: &[u8]) {
     for n in numbers{
         println!("{}", n);
+    
+        return 
     }
 }
 
